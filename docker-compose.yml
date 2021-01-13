@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  algo-container:
+    build: ./algo_container
+    volumes:
+      - ./algo_container:/
+    ports:
+      - 5555:5555
+
+  ui-container:
+    image: php:apache
+    volumes:
+      - ./html-template:/ui_container
+    ports:
+      - 5555:5555
+    depends_on:
+      - algo-container

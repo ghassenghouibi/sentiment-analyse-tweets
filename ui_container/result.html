@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+	<meta name="viewport" content="width=device-width, 	initial-scale=1">
+</head>
+<style>
+body {
+  background: #1DA1F2;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
+<body>
+
+	<div class="content">
+
+	<div class="container" style="text-align: center;">
+		<i class="fa fa-twitter" aria-hidden="true"></i>
+		Résultat d'analyse de sentiments des tweets
+		<i class="fa fa-twitter" aria-hidden="true"></i>
+	</div>
+
+		
+	{% if prediction == 1%}
+	<h2 style="color:red;">C'est un tweet négatif</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">C'est un tweet positif</h2>
+	{% endif %}
+
+	
+	<a href="..">
+	<input type="submit" value="Retour ...">
+	</a>
+	</div>
+
+</body>
+</html>
