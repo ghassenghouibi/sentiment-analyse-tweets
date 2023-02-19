@@ -2,9 +2,9 @@ click==7.1.2
 Flask==1.1.2
 itsdangerous==1.1.0
 Jinja2==2.11.2
-joblib==0.16.0
+joblib==1.1.1
 MarkupSafe==1.1.1
-nltk==3.5
+nltk==3.6.6
 python-dateutil==2.8.1
 pytz==2020.1
 regex==2020.6.8
